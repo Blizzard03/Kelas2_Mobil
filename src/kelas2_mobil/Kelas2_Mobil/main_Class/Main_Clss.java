@@ -21,6 +21,9 @@ public class Main_Clss {
         Mobil mobil2 = new Mobil("Sedan"); // Konstruktor dengan parameter mobil
         Mobil mobil3 = new Mobil("SUV", 150000); // Konstruktor dengan parameter mobil dan tarif
         Mobil mobil4 = new Mobil("Minivan", 120000, 2020); // Konstruktor dengan parameter mobil, tarif, dan keluaran
+        Mobil mobil5 = new Mobil("Mitsubitsi Lancer Evo X", 150000, 2016);
+        Mobil mobil6 = new Mobil("Suzuki Karimun Wagon", 250000, 2023);
+        Mobil mobil7 = new Mobil("Toyora Starlet Starko GT Turbo", 175000, 1998);
 
         // Menampilkan informasi mobil
         System.out.println("Mobil 1:");
@@ -42,6 +45,23 @@ public class Main_Clss {
         System.out.println("Jenis Mobil: " + mobil4.getMobil());
         System.out.println("Tarif: " + mobil4.getTarif());
         System.out.println("Keluaran: " + mobil4.getKeluaran());
+        System.out.println("Umur Mobil: " + Mobil.hitung_tahun(mobil4.getKeluaran()) + " " + "Tahun");
+        System.out.println("\nMobil 5:");
+        System.out.println("Jenis Mobil: " + mobil5.getMobil());
+        System.out.println("Tarif: " + mobil5.getTarif());
+        System.out.println("Keluaran: " + mobil5.getKeluaran());
+        System.out.println("Umur Mobil: " + Mobil.hitung_tahun(mobil5.getKeluaran()) + " " + "Tahun");
+        System.out.println("\nMobil 6:");
+        System.out.println("Jenis Mobil: " + mobil6.getMobil());
+        System.out.println("Tarif: " + mobil6.getTarif());
+        System.out.println("Keluaran: " + mobil6.getKeluaran());
+        System.out.println("Umur Mobil: " + Mobil.hitung_tahun(mobil6.getKeluaran()) + " " + "Tahun");
+        System.out.println("\nMobil 7:");
+        System.out.println("Jenis Mobil: " + mobil7.getMobil());
+        System.out.println("Tarif: " + mobil7.getTarif());
+        System.out.println("Keluaran: " + mobil7.getKeluaran());
+        System.out.println("Umur Mobil: " + Mobil.hitung_tahun(mobil7.getKeluaran()) + " " + "Tahun");
+
     }
 
 }

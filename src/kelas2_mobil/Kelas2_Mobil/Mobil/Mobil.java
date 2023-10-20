@@ -61,4 +61,8 @@ public class Mobil {
     public int getKeluaran() {
         return keluaran;
     }
+
+    public static int hitung_tahun(int tahun) {
+        return (tahun - 2015);
+    }
 }
