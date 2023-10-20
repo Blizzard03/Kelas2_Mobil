@@ -62,6 +62,24 @@ public class Main_Clss {
         System.out.println("Keluaran: " + mobil7.getKeluaran());
         System.out.println("Umur Mobil: " + Mobil.hitung_tahun(mobil7.getKeluaran()) + " " + "Tahun");
 
+        int[] usia = {
+            Mobil.hitung_tahun(mobil7.getKeluaran())+
+            Mobil.hitung_tahun(mobil4.getKeluaran())
+            + Mobil.hitung_tahun(mobil5.getKeluaran())
+            + Mobil.hitung_tahun(mobil6.getKeluaran())
+            
+        };
+        int mobillkurangdari10tahun = usia[0];
+        int mobillebihdari10tahun = usia[0];
+        for(int i = 0; i<usia.length;i++){
+            if(usia[i]>=10){
+                mobillebihdari10tahun = usia[i];
+            }else if(usia[i]<10){
+                mobillebihdari10tahun = usia[i];
+            }
+        }
+        System.out.println("Mobil berumur < 10 tahun" + " " + Math.abs(mobillkurangdari10tahun) + " " + "mobil");
+        System.out.println("Mobil berumur >= 10 tahun" + " " + Math.abs(mobillebihdari10tahun) + " " + "mobil");
     }
 
 }
